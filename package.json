@@ -28,6 +28,7 @@
     "@types/js-yaml": "^4.0.9",
     "gh-pages": "^6.3.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11"
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "terser": "^5.39.0"
   }
 }
