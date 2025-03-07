@@ -36,7 +36,7 @@ import TextEditor from './components/TextEditor.vue'
 const content = ref('')
 
 posthog.init(import.meta.env.VITE_POSTHOG_API_KEY, {
-  api_host: 'https://app.posthog.com',
+  api_host: 'https://eu.i.posthog.com',
   loaded: (posthog) => {
     if (import.meta.env.DEV) {
       posthog.opt_out_capturing()
