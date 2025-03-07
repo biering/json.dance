@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 
 import App from './App.vue'
+import { PostHogPlugin } from './plugins/posthog'
 import './style.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(PostHogPlugin)
+app.mount('#app')

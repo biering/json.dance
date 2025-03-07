@@ -26,23 +26,9 @@
 </template>
 
 <script setup lang="ts">
-import posthog from 'posthog-js'
-import { ref } from 'vue'
-
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import TextEditor from './components/TextEditor.vue'
-
-const content = ref('')
-
-posthog.init(import.meta.env.VITE_POSTHOG_API_KEY, {
-  api_host: 'https://eu.i.posthog.com',
-  loaded: (posthog) => {
-    if (import.meta.env.DEV) {
-      posthog.opt_out_capturing()
-    }
-  },
-})
 </script>
 
 <style>

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "format": "npx prettier . --check",
     "format:fix": "npx prettier . --write",
-    "deploy": "pnpm run build && wrangler pages deploy dist"
+    "deploy": "pnpm run build && wrangler pages deploy dist",
+    "upgrade:deps": "pnpm update --interactive --latest"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
