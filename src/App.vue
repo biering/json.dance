@@ -26,9 +26,13 @@
 </template>
 
 <script setup lang="ts">
+import posthog from 'posthog-js'
+
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import TextEditor from './components/TextEditor.vue'
+
+posthog.capture('user_visit_website')
 </script>
 
 <style>
