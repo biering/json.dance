@@ -2,7 +2,7 @@ import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/json.dance/',
+  base: '/',
   plugins: [vue()],
   build: {
     target: 'esnext',
